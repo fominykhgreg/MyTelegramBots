@@ -45,33 +45,7 @@ def send_echo(message):
 
 
 
-    # if message.text.title() == "Привет":
-    #     bot.send_message(message.chat.id, f"Привет, {message.from_user.first_name}.")
-    # else:
-    #     try:
-    #         observation = mgr.weather_at_place(message.text)
-    #
-    #         w = observation.weather
-    #         z = w.temperature('celsius')["temp"]
-    #
-    #
-    #         answer = f"Текущая температура в городе {message.text} сейчас:  {round(z)} градус/ов.\n\n"
-    #
-    #         if z < 0:
-    #             answer += "Холодрыжество! Надевай вторые штаны.\n\n"
-    #         if z < -5:
-    #             answer += "А так же шапку и варежки.\n\n"
-    #         if z < -10:
-    #             answer += "Утепляйся на максимум!!!\n\n"
-    #         if z > 24:
-    #             answer += "Ох,везет же людям...\n\n"
-    #
-    #         #answer += "Хорошего дня! Спасибо, что пользуетесь нашими сервисами.\n"
-    #         answer += "Ты пидор!\n"
-    #
-    #         bot.send_message(message.chat.id, answer)
-    #     except NotFoundError:
-    #         bot.send_message(message.chat.id, f"{message.text.title()}? Ты это сам придумал? Сказал же,пиши без ошибок...")
+   
 
 
 bot.polling(none_stop = True)
