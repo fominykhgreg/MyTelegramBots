@@ -43,7 +43,7 @@ def send_echo(message):
                 answer += "Ох,везет же людям...\n\n"
 
             answer += "Хорошего дня! Спасибо, что пользуетесь нашими сервисами.\n"
-            answer += "Ты пидор!\n"
+            
 
             bot.send_message(message.chat.id, answer)
         except NotFoundError:
